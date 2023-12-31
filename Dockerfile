@@ -7,6 +7,6 @@ RUN gradle build
 
 # Run application
 FROM openjdk:17-oracle
-COPY --from=builder /home/gradle/src/build/libs/mongo-test-normalized-0.0.1-SNAPSHOT.jar app.jar
+COPY --from=builder /home/gradle/src/build/libs/*.jar app.jar
 ENTRYPOINT ["java", "-jar", "/app.jar"]
 EXPOSE 5005
