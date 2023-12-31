@@ -43,4 +43,9 @@ public class SubjectServiceImpl implements SubjectService {
         }
         return isExists;
     }
+
+    @Override
+    public List<Subject> getAllByIdIn(List<String> ids) {
+        return subjectRepository.findAllByIdIn(ids);
+    }
 }
