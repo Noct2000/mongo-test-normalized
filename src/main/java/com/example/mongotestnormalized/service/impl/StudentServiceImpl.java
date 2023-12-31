@@ -2,9 +2,7 @@ package com.example.mongotestnormalized.service.impl;
 
 import com.example.mongotestnormalized.model.Student;
 import com.example.mongotestnormalized.repository.StudentRepository;
-import com.example.mongotestnormalized.service.DepartmentService;
 import com.example.mongotestnormalized.service.StudentService;
-import com.example.mongotestnormalized.service.SubjectService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
